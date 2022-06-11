@@ -49,7 +49,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 22,
+    "uniqCompNum": 23,
     "versionPublish": "5.6.8",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -908,99 +908,91 @@
           "_params": {}
         },
         {
-          "_name": "header1",
-          "_sourceTheme": "voyagem4",
-          "_customHTML": "<section class=\"clients header1 voyagem4_header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider\" data-interval=\"false\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<header>Title</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Slider</header>\n\t\t<input type=\"checkbox\" title=\"Show Indicators\" name=\"showIndicators\">\n\t\t<input type=\"checkbox\" title=\"Show Arrows\" name=\"showArrows\" checked>\n\t\t<input type=\"color\" title=\"Arrows/Indicators Color\" name=\"arrowsColor\" value=\"#003d59\" condition=\"showArrows || showIndicators\">\n\t\t<input type=\"range\" inline title=\"Items\" name=\"slidesCount\" min=\"3\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<select title=\"Visible Slides\" name=\"visibleSlides\" condition=\"false\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\t\t<input type=\"checkbox\" title=\"Autoplay\" name=\"showAutoplay\" checked>\n\t\t<input type=\"range\" inline title=\"Autoplay Interval (ms)\" name=\"interval\" min=\"1000\" max=\"8000\" step=\"1000\" value=\"7000\" condition=\"showAutoplay\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/voyagem4/components/_images/background.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#0d0f1c\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row align-items-center justify-content-center\">\n\t\t\t<div class=\"col-12 col-lg-6 col-md-8 col-sm-8 title__block\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Let's Redefine Gen Z</h1>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Gen Z is becoming ever conscious about the brands they engage with. They are digging into the values and social intelligence into the products they buy - making sure the brand's missions and policies align with their goals. And we KNOW how to make brands shine to our generation.</h3>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta velit rem alias aut beatae?\n\t\t\t\t\tFacilis, reprehenderit dignissimos\n\t\t\t\t\tiusto tempore corrupti fugiat, nihil dolorum excepturi. Officiis ad quo optio illo, vitae.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t<a class=\"btn btn-lg btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">Discover</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-6 col-12 col-md-8 slider__block\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div class=\"carousel slide\" role=\"listbox\" data-pause=\"true\" data-keyboard=\"false\" data-ride=\"{{showAutoplay ? 'carousel' : 'false'}}\" data-interval=\"{{showAutoplay ? interval : 'false'}}\">\n\t\t\t\t\t\t<ol class=\"carousel-indicators\" mbr-if=\"showIndicators\">\n\t\t\t\t\t\t\t<li data-slide-to=\"0\" class=\"active\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 1\" data-slide-to=\"1\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 2\" data-slide-to=\"2\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 3\" data-slide-to=\"3\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 4\" data-slide-to=\"4\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 5\" data-slide-to=\"5\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 6\" data-slide-to=\"6\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 7\" data-slide-to=\"7\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 8\" data-slide-to=\"8\"></li>\n\t\t\t\t\t\t\t<li mbr-if=\"slidesCount > 9\" data-slide-to=\"9\"></li>\n\t\t\t\t\t\t</ol>\n\t\t\t\t\t\t<div class=\"carousel-inner\" mbr-list mbr-list-grow=\"slidesCount\" data-visible=\"{{visibleSlides}}\">\n\t\t\t\t\t\t\t<div class=\"carousel-item\">\n\t\t\t\t\t\t\t\t<div class=\"media-container-row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"wrap-img\">\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/257738578-264544772308699-8973967239179814500-n-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"carousel-item\">\n\t\t\t\t\t\t\t\t<div class=\"media-container-row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"wrap-img\">\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/a33fa97fc9454bb2a9d9b3618d467295-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"carousel-item\">\n\t\t\t\t\t\t\t\t<div class=\"media-container-row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"wrap-img\">\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/132081680-665874607389985-8508691008021405996-n-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-controls\" mbr-if=\"showArrows\">\n\t\t\t\t\t\t\t<a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n\t\t\t\t\t\t\t\t<span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-left mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t<span class=\"sr-only\">Previous</span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\">\n\t\t\t\t\t\t\t\t<span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t<span class=\"sr-only\">Next</span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_name": "slider1",
+          "_sourceTheme": "modernm4",
+          "_customHTML": "<section class=\"slider1 modernm4_slider1 clients\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider\" data-interval=\"false\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <header>Title</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <header>Slider</header>\n        <input type=\"checkbox\" title=\"Show Arrows\" name=\"showArrows\">\n        <input type=\"color\" title=\"Arrows Color\" name=\"arrowsColor\" value=\"#233d63\" condition=\"showArrows\">\n        <input type=\"range\" inline title=\"Items\" name=\"slidesCount\" min=\"1\" max=\"20\" step=\"1\" value=\"3\">\n        <input type=\"color\" title=\"Slides Color\" name=\"slidesColor\" value=\"#233d63\">\n        <select title=\"Visible Slides\" name=\"visibleSlides\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"showAutoplay\" checked>\n        <input type=\"range\" inline title=\"Autoplay Interval (ms)\" name=\"interval\" min=\"1000\" max=\"8000\" step=\"1000\" value=\"6000\" condition=\"showAutoplay\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/modernm4/components/_images/background/backgraund__trend.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#5eeebb\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n    <div mbr-class=\"{'container-fluid' : fullWidth, 'container' : !fullWidth}\" mbr-if=\"showSubtitle || showTitle || showButtons || showArrows\">\n        <div class=\"row wrap\">\n            <div class=\"title__block\" mbr-class=\"{'col-md-6' : (showButtons && showArrows) || !showButtons, 'col-md-12' : !showButtons && !showArrows, 'col-md-8' : !showArrows && showButtons}\" mbr-if=\"showSubtitle || showTitle\">\n                <h4 class=\"mbr-section-subtitle mbr-medium mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">Let's Redefine Gen Z</h4>\n                <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Gen Z is becoming ever conscious about the brands they engage with. They are digging into the values and social intelligence into the products they buy - making sure the brand's missions and policies align with their goals. And we KNOW how to make brands shine to our generation.</h2>\n            </div>\n            <div class=\"arrows\" mbr-class=\"{'col-md-8' : !showTitle && !showSubtitle && showButtons, 'col-md-12' : !showTitle && !showSubtitle && !showButtons, 'col-md-2' : (showTitle || showSubtitle) && (showButtons || !showButtons)}\" mbr-if=\"showArrows\"></div>\n            <div class=\"col-md-4 buttons\" mbr-if=\"showButtons\">\n                <div class=\"mbr-section-btn\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">View Gallery</a></div>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-class=\"{'container-fluid' : fullWidth, 'container' : !fullWidth}\">\n        <div class=\"carousel slide\" role=\"listbox\" data-pause=\"true\" data-keyboard=\"false\" data-ride=\"{{showAutoplay ? 'carousel' : 'false'}}\" data-interval=\"{{showAutoplay ? interval : 'false'}}\">\n            <div class=\"media-container-row arrows\">\n                <div mbr-class=\"{'col-md-8' : !showTitle && !showSubtitle && showButtons, 'col-md-12' : !showTitle && !showSubtitle && !showButtons, 'col-md-2' : (showTitle || showSubtitle) && (showButtons || !showButtons)}\">\n                    <div class=\"carousel-controls\" mbr-if=\"showArrows\">\n                        <a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                            <span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-left mbr-iconfont\"></span>\n                            <span class=\"sr-only\">Previous</span>\n                        </a>\n                        <a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\">\n                            <span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                            <span class=\"sr-only\">Next</span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"carousel-inner\" mbr-list mbr-list-grow=\"slidesCount\" data-visible=\"{{visibleSlides}}\">\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/a33fa97fc9454bb2a9d9b3618d467295-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n                                <div class=\"icon__block\">\n                                    <span mbr-icon class=\"mbr-iconfont mbr-iconfont-1 mbri-plus\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/132081680-665874607389985-8508691008021405996-n-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n                                <div class=\"icon__block\">\n                                    <span mbr-icon class=\"mbr-iconfont mbr-iconfont-1 mbri-plus\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/257738578-264544772308699-8973967239179814500-n-500x500.jpg\" class=\"img-responsive clients-img\" alt title>\n                                <div class=\"icon__block\">\n                                    <span mbr-icon class=\"mbr-iconfont mbr-iconfont-1 mbri-plus\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                \n                \n\n            </div>\n\n            <div class=\"carousel-controls d-md-none\" mbr-if=\"showArrows\">\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                    <span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-left mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Previous</span>\n                </a>\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\">\n                    <span aria-hidden=\"true\" class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
+            "overflow": "hidden",
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
-            "overflow": "hidden",
-            "& when (@bg-type = 'color')": {
+            "& when (@bg-type = \"color\")": {
               "background-color": "@bg-value"
             },
-            "& when (@bg-type = 'image')": {
+            "& when (@bg-type = \"image\")": {
               "background-image": "url(@bg-value)"
             },
-            ".title__block": {
-              "position": "relative",
-              "z-index": "10"
+            ".mbr-overlay": {
+              "background": "@overlayColor"
             },
-            ".mbr-section-title": {
-              "margin-bottom": "25px",
-              "color": "#003b61"
+            ".row": {
+              "margin": "0"
             },
             ".mbr-section-subtitle": {
-              "margin-bottom": "10px",
-              "padding-right": "150px",
-              "color": "#003b61"
+              "letter-spacing": "1.5px",
+              "margin-bottom": "15px",
+              "color": "#2e71b8"
             },
-            ".mbr-text": {
-              "margin-bottom": "50px",
-              "padding-right": "150px"
-            },
-            ".mbr-section-btn": {
-              "padding-right": "150px"
-            },
-            ".slider__block .container": {
-              "padding": "0 15px"
-            },
-            ".carousel": {
-              "padding-bottom": "100px",
-              "& when (@showIndicators) and (@showArrows)": {
-                "padding-bottom": "160px"
+            ".mbr-section-title": {
+              "color": "#233d63",
+              "font-weight": "300",
+              "b, strong": {
+                "font-weight": "500"
               }
             },
-            ".carousel-inner": {
-              "overflow": "visible",
-              "transform": "translateX(250px)"
+            ".buttons": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "justify-content": "flex-end"
+            },
+            ".wrap": {
+              "margin-bottom": "100px"
+            },
+            "@media (max-width: 991px) and (min-width: 575px)": {
+              ".media-container-row > .col-md-12": {
+                "max-width": "80%"
+              }
             },
             ".carousel-item": {
               "justify-content": "center",
-              "opacity": "0",
-              "transition": "opacity 2s ease, transform 0s ease .3s",
-              "&.active": {
-                "opacity": "1"
-              },
               ".media-container-row": {
+                "-webkit-flex-grow": "1",
                 "flex-grow": "1"
               },
               ".wrap-img": {
-                "transition": "transform 0s",
-                "position": "relative",
                 "text-align": "center",
-                "margin": "auto",
-                "width": "400px",
-                "height": "600px",
-                "transform": "scale(0.9) rotate(-7deg)",
-                "z-index": "1",
+                "width": "100%",
+                "cursor": "pointer",
+                "overflow": "hidden",
+                "background": "linear-gradient(130deg, fade(@slidesColor, 30) 0%, fade(@slidesColor, 100) 100%)",
+                "border-radius": "3px",
+                "&:hover": {
+                  "img": {
+                    "transform": "scale(0.93)",
+                    "opacity": "0.8"
+                  },
+                  ".icon__block": {
+                    "opacity": "1"
+                  }
+                },
                 "img": {
-                  "height": "100%",
+                  "transition": "all 0.6s ease-in-out",
+                  "border-radius": "3px",
                   "width": "100%",
                   "object-fit": "cover"
                 },
                 "@media (max-width: 991px)": {
                   "width": "100%"
-                }
-              },
-              ".cloneditem-1, .cloneditem-2": {
-                "opacity": "0"
-              },
-              "&.active .cloneditem-1": {
-                "transform": "translateX(-170px)",
-                "z-index": "2",
-                "opacity": "1",
-                "transition": "opacity .5s ease .3s",
-                ".wrap-img": {
-                  "transform": "scale(1.1)"
-                }
-              },
-              "&.active .cloneditem-2": {
-                "transform": "translateX(-270px)",
-                "z-index": "3",
-                "opacity": "1",
-                "transition": "opacity .5s ease .7s",
-                ".wrap-img": {
-                  "transform": "scale(0.9) rotate(7deg)"
+                },
+                ".icon__block": {
+                  "position": "absolute",
+                  "opacity": "0",
+                  "top": "50%",
+                  "right": "50%",
+                  "transform": "translate(50%, -50%)",
+                  "z-index": "10",
+                  "color": "#ffffff",
+                  "font-size": "50px",
+                  "transition": "all 0.6s ease-in-out"
                 }
               }
             },
@@ -1014,19 +1006,15 @@
               "position": "absolute",
               "width": "100%",
               "display": "flex",
-              "justify-content": "flex-start",
-              "margin-top": "80px",
-              "& when (@showIndicators)": {
-                "justify-content": "center"
-              },
+              "justify-content": "center",
               ".carousel-control": {
                 "z-index": "2",
                 "background": "transparent",
                 "position": "static",
-                "width": "45px",
-                "height": "45px",
+                "width": "40px",
+                "height": "40px",
                 "color": "@arrowsColor",
-                "transition": "all 0.3s ease",
+                "transition": "all 0.3s ease-in-out",
                 "&.carousel-control-prev": {
                   "left": "auto",
                   "margin-right": "20px",
@@ -1037,38 +1025,12 @@
                   "margin-right": "0"
                 },
                 ".mbr-iconfont": {
-                  "font-size": "45px"
+                  "font-size": "30px"
                 }
               }
             },
-            ".carousel-indicators": {
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "position": "absolute",
-              "bottom": "0",
-              "margin": "2rem 1rem 0",
-              "text-align": "center",
-              "li": {
-                "max-width": "initial",
-                "width": "190px",
-                "height": "15px",
-                "background-color": "transparent",
-                "display": "inline-block",
-                "border": "0",
-                "border-bottom": "2px solid @arrowsColor",
-                "max-height": "initial",
-                "border-radius": "0",
-                "opacity": "1",
-                "margin": "0",
-                "transition": "all 0s ease .3s",
-                "&.active": {
-                  "border": "0",
-                  "border-bottom": "5px solid @arrowsColor",
-                  "margin": "0",
-                  "opacity": "1"
-                }
-              }
+            ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+              "display": "none"
             },
             ".col-lg-15": {
               "flex": "0 0 100%",
@@ -1079,17 +1041,34 @@
               "padding-left": "10px",
               "width": "100%"
             },
-            ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
-              "display": "none"
+            "@media (max-width: 767px)": {
+              ".wrap": {
+                "margin-bottom": "50px"
+              },
+              ".buttons": {
+                "margin-top": "40px",
+                "justify-content": "flex-start"
+              },
+              ".arrows": {
+                "display": "none"
+              },
+              ".carousel-item": {
+                "margin-bottom": "60px"
+              },
+              ".container-fluid, .container": {
+                "padding": "0"
+              }
             },
             "@media (min-width: 992px)": {
               ".col-lg-15": {
+                "-ms-flex": "0 0 20%",
+                "-webkit-flex": "0 0 20%",
                 "flex": "0 0 20%",
                 "max-width": "20%",
                 "width": "20%"
               },
               ".carousel-inner": {
-                "padding-bottom": "3px",
+                "z-index": "1",
                 "&.slides2": {
                   "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
                     "left": "0",
@@ -1123,72 +1102,67 @@
                   ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
                     "display": "block"
                   }
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".title__block": {
-                "text-align": "center",
-                "margin-bottom": "67px"
-              },
-              ".mbr-section-title": {
-                "margin-bottom": "18px"
-              },
-              ".mbr-section-subtitle": {
-                "margin-bottom": "7px",
-                "padding-right": "0"
-              },
-              ".mbr-text": {
-                "margin-bottom": "28px",
-                "padding-right": "0"
-              },
-              ".mbr-section-btn": {
-                "padding-right": "0"
-              },
-              ".carousel-inner": {
-                "overflow": "hidden",
-                "transform": "translateX(0)"
-              },
-              ".carousel-item": {
-                "transition": "all .3s ease",
-                "opacity": "1",
-                ".wrap-img": {
-                  "height": "auto",
-                  "transition": "all .3s 0s",
-                  "transform": "scale(1) rotate(0)",
-                  "width": "100%"
-                }
-              },
-              ".carousel-indicators li": {
-                "transition": "all 0s ease 0s"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".carousel-controls": {
-                "justify-content": "center",
-                "margin-top": "40px",
-                "& when (@showIndicators)": {
-                  "display": "none"
                 },
-                ".carousel-control": {
-                  "width": "30px",
-                  "height": "30px",
-                  ".mbr-iconfont": {
-                    "font-size": "30px"
+                "&.slides4": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "transform": "translate3d(25%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "transform": "translate3d(-25%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides5": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "transform": "translate3d(20%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "transform": "translate3d(-20%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4": {
+                    "display": "block"
+                  }
+                },
+                "&.slides6": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "transform": "translate3d(16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "transform": "translate3d(-16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+                    "display": "block"
                   }
                 }
-              },
-              ".carousel when (@showIndicators)": {
-                "padding-bottom": "50px"
               }
             }
           },
-          "_cid": "t8ucDMkGAZ",
-          "_anchor": "header1-j",
+          "_cid": "t8ukICZF4m",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "slider1-m"
         },
         {
           "alias": false,
