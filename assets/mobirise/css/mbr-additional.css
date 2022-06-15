@@ -1933,6 +1933,9 @@ section.lazy-placeholder:after {
   background: none !important;
   text-decoration: none !important;
 }
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
+}
 .cid-t8lvVq3lpQ {
   min-height: 85px !important;
   position: static;
@@ -2700,6 +2703,23 @@ section.lazy-placeholder:after {
   background: none !important;
   text-decoration: none !important;
 }
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
+}
+.cid-zBt0Z7mWhM {
+  padding-top: 75px;
+  padding-bottom: 95px;
+  background-color: #2e71b8;
+}
+.cid-zBt0Z7mWhM svg {
+  overflow: hidden;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0;
+}
+.cid-zBt0Z7mWhM .wave {
+  fill: #ffffff;
+}
 .cid-t8lvVq3lpQ {
   min-height: 85px !important;
   position: static;
@@ -3183,107 +3203,6 @@ section.lazy-placeholder:after {
 .cid-t8lvVq3lpQ .navbar-dropdown.navbar-short .navbar-brand {
   padding: 0rem;
 }
-.cid-t8zxsMl38S {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
-}
-.cid-t8zxsMl38S .mbr-overlay {
-  z-index: 1;
-}
-.cid-t8zxsMl38S .main-container {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #7F8678;
-  border-top: 1px solid #7F8678;
-  margin-top: -1px;
-  position: relative;
-  z-index: 2;
-}
-.cid-t8zxsMl38S .row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.cid-t8zxsMl38S .text-container {
-  height: 100%;
-  background: #2e71b8;
-}
-@media (min-width: 992px) {
-  .cid-t8zxsMl38S .text-container {
-    border-right: 1px solid #7F8678;
-  }
-}
-.cid-t8zxsMl38S .text-wrap {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 32px;
-  margin-bottom: auto;
-  min-height: 390px;
-}
-@media (min-width: 992px) {
-  .cid-t8zxsMl38S .text-wrap {
-    max-width: 512px;
-    min-height: 644px;
-  }
-}
-.cid-t8zxsMl38S .main-text {
-  width: 100%;
-  margin: 0 0 auto;
-}
-.cid-t8zxsMl38S .text {
-  color: #ffffff;
-}
-.cid-t8zxsMl38S .mobi-mbri-arrow-next {
-  margin-left: 5px;
-}
-.cid-t8zxsMl38S .mobi-mbri-arrow-prev {
-  margin-right: 5px;
-}
-.cid-t8zxsMl38S .item-wrapper {
-  width: 100%;
-}
-.cid-t8zxsMl38S .mbr-section-title {
-  line-height: 1.25em;
-  color: #ffffff;
-}
-.cid-t8zxsMl38S .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.cid-t8zxsMl38S .item-img {
-  flex-grow: 1;
-  display: flex;
-  transition: border-color 200ms ease;
-  width: 100%;
-  overflow: hidden;
-  height: 644px;
-}
-.cid-t8zxsMl38S .item-img img {
-  object-fit: cover;
-  height: 100%;
-  transition: 1.16s;
-  transform: scale(1.05);
-  transform-origin: 100% 50%;
-  min-width: 100%;
-  transform-style: preserve-3d;
-}
-.cid-t8zxsMl38S .item-img:hover img {
-  transform: scale(1);
-}
-.cid-t8zxsMl38S .link {
-  color: #3d3d3d;
-}
-.cid-t8zxsMl38S .underlined-link {
-  color: #3d3d3d;
-}
-.cid-t8zxsMl38S .underlined-link:after {
-  height: 1px !important;
-}
-.cid-t8zxsMl38S .text-with-round {
-  color: #ffffff;
-}
 .cid-t8zx73DBsi {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -3413,6 +3332,9 @@ section.lazy-placeholder:after {
 .cid-t8GUbEmyLs .footer-item a {
   background: none !important;
   text-decoration: none !important;
+}
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
 }
 .cid-t8lvVq3lpQ {
   min-height: 85px !important;
@@ -3902,7 +3824,7 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 768px) {
   .cid-t8wMOcfdYW {
-    background-image: url("../../../assets/images/features15.jpg");
+    background-image: url("../../../assets/images/usc-reach-brianwstills-43-2000x1333.jpg");
     background-position: center left;
     background-repeat: no-repeat;
     background-size: 50% auto;
@@ -4352,6 +4274,9 @@ section.lazy-placeholder:after {
 .cid-t8GUbEmyLs .footer-item a {
   background: none !important;
   text-decoration: none !important;
+}
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
 }
 .cid-t8lvVq3lpQ {
   min-height: 85px !important;
@@ -5235,6 +5160,9 @@ section.lazy-placeholder:after {
   background: none !important;
   text-decoration: none !important;
 }
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
+}
 .cid-t8lvVq3lpQ {
   min-height: 85px !important;
   position: static;
@@ -5886,4 +5814,7 @@ section.lazy-placeholder:after {
 .cid-t8GUbEmyLs .footer-item a {
   background: none !important;
   text-decoration: none !important;
+}
+.cid-t8GUbEmyLs .footer-item-title {
+  color: #354463;
 }
